@@ -225,8 +225,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qgxk8"]
-radius = 21.0
-height = 68.0
+radius = 13.0
+height = 82.0
 
 [node name="player" type="CharacterBody2D" unique_id=1725923740]
 floor_constant_speed = true
@@ -234,11 +234,10 @@ floor_snap_length = 12.0
 script = ExtResource("1_fvtld")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=270314050]
-position = Vector2(8.875, 16.500004)
 scale = Vector2(0.6409091, 0.6318682)
 sprite_frames = SubResource("SpriteFrames_qwc0f")
-animation = &"jump"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=912425932]
-position = Vector2(11, 34)
+position = Vector2(7, 6)
 shape = SubResource("CapsuleShape2D_qgxk8")
